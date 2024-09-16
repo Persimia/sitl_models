@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<sdf version='1.9'>
+  <model name='blade_root'>
+  <static>true</static>
+    <link name='blade_link'>
+      <collision name="blade_collision">
+        <geometry>
+          <mesh>
+            <uri>model://blade_root/meshes/blade_root.stl</uri>
+            <scale> 0.25 0.25 0.25 </scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="blade1_visual">
+        <geometry>
+          <mesh>
+            <uri>model://blade_root/meshes/blade_root.stl</uri>
+            <scale> 0.25 0.25 0.25 </scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.8 0.8 0.8 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>1.0 1.0 1.0 1.0</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
