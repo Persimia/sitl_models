@@ -3,6 +3,19 @@
   <model name='blade_root'>
   <static>true</static>
     <link name='blade_link'>
+        <velocity_decay>
+            <linear>1000000</linear>  <!-- Higher values mean more damping, hence slower max speed -->
+            <angular>1000000</angular>
+        </velocity_decay>
+        <self_collide>true</self_collide>
+        <inertial>
+            <mass>1000000</mass>
+            <inertia>
+              <ixx>1000000</ixx>
+              <iyy>1000000</iyy>
+              <izz>1000000</izz>
+            </inertia>
+          </inertial>    
       <collision name="blade_collision">
         <geometry>
           <mesh>

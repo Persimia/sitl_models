@@ -1,5 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.9'>
+   
   <model name='suction_anchor'>
         <link name="shoulder_link">
         <inertial>
@@ -103,7 +104,7 @@
                 <specular>0.0 1 0.0 1</specular>
             </material>
         </visual>
-        <collision name='collision'>
+        <collision name='suction_collision'>
             <geometry>
                 <box>
                     <size>0.05 0.1 0.1</size>
@@ -130,7 +131,7 @@
         </collision>
         <sensor name='sensor_contact' type='contact'>
             <contact>
-                <collision>collision</collision>
+                <collision>suction_collision</collision>
             </contact>
         </sensor>
     </link>
@@ -185,5 +186,13 @@
             </dynamics>
         </axis>
     </joint>
+    <plugin filename="SuctionPlugin"
+            name="SuctionPlugin">
+        <parent_link>probe</parent_link>
+        <detach_topic>/detach</detach_topic>
+        <attach_topic>/attach</attach_topic>
+        <output_topic>/attached_state</output_topic>
+        <suction_force>100</suction_force>
+    </plugin>
   </model>
 </sdf>

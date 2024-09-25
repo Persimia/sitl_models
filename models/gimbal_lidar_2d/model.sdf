@@ -175,7 +175,7 @@
         <pose degrees="true">0 -0.05 0.0 90 -90 0</pose>
         <always_on>1</always_on>
         <topic>lidar</topic>
-        <update_rate>5</update_rate>
+        <update_rate>2</update_rate>
         <visualize>1</visualize>
         <ray>
           <scan>
