@@ -175,3 +175,6 @@ autotest_result_*_junit.xml
 */.vscode
 .vscode/*
 
+**/dump*sh_arducopter.*.out
+
+
