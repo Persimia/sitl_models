@@ -197,6 +197,18 @@
                 <spring_stiffness> 10</spring_stiffness>
             </dynamics>
         </axis>
+        <axis>
+            <xyz expressed_in='__model__'>0 0 1</xyz>
+            <limit>
+                <lower>-.5</lower>    <!--negative infinity-->
+                <upper>.5</upper>     <!--positive infinity-->
+            </limit>
+            <dynamics>
+                <damping>1</damping>
+                <spring_reference> 0 </spring_reference>
+                <spring_stiffness> 10</spring_stiffness>
+            </dynamics>
+        </axis>
     </joint>
     <plugin filename="SuctionPlugin"
             name="SuctionPlugin">
