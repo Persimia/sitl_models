@@ -1,0 +1,606 @@
+<?xml version='1.0'?>
+<sdf version='1.9'>
+<model name='jumping_spider'>
+    <link name='base_link'>
+        <inertial>
+        <pose>-0.01437532480620069 -0.0004070458687890737 -0.028295530218299149 0 0 0</pose>
+        <mass>51.636490357789953</mass>
+        <inertia>
+            <ixx>1.4636979999999999</ixx>
+            <ixy>-0.0049829999999999996</ixy>
+            <ixz>0.230957</ixz>
+            <iyy>3.4160020000000002</iyy>
+            <iyz>0.0021440000000000001</iyz>
+            <izz>4.1856669999999996</izz>
+        </inertia>
+        </inertial>
+                <visual name='base_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/base_link.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 15' type='revolute'>
+        <pose relative_to='base_link'>-0.295991 0.40000000000000002 0.025825000000000001 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>prop_2_1</child>
+        <axis>
+        <xyz>0.087155999999999997 0 0.99619500000000005</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='prop_2_1'>
+        <pose relative_to='Revolute 15'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>-3.0666437283888293e-05 1.0845890296984351e-09 -0.00044538068127512181 0 0 0</pose>
+        <mass>0.45314088887048681</mass>
+        <inertia>
+            <ixx>8.3999999999999995e-05</ixx>
+            <ixy>-0.00014100000000000001</ixy>
+            <ixz>0.00028499999999999999</ixz>
+            <iyy>0.0041580000000000002</iyy>
+            <iyz>1.0000000000000001e-05</iyz>
+            <izz>0.0041830000000000001</izz>
+        </inertia>
+        </inertial>
+                <visual name='prop_2_1_visual'>
+        <pose>0.295991 -0.40000000000000002 -0.025825000000000001 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/prop_2_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 16' type='revolute'>
+        <pose relative_to='base_link'>-0.295991 -0.40000000000000002 0.025825000000000001 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>prop_4_1</child>
+        <axis>
+        <xyz>0.087155999999999997 0 0.99619500000000005</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='prop_4_1'>
+        <pose relative_to='Revolute 16'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>-3.9592332341853442e-05 -8.057256877247454e-06 -0.00044460045024726641 0 0 0</pose>
+        <mass>0.4531407998317975</mass>
+        <inertia>
+            <ixx>0.004084</ixx>
+            <ixy>-0.00056300000000000002</ixy>
+            <ixz>2.0999999999999999e-05</ixz>
+            <iyy>0.00014200000000000001</iyy>
+            <iyz>0.00012400000000000001</iyz>
+            <izz>0.0041989999999999996</izz>
+        </inertia>
+        </inertial>
+                <visual name='prop_4_1_visual'>
+        <pose>0.295991 0.40000000000000002 -0.025825000000000001 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/prop_4_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 17' type='revolute'>
+        <pose relative_to='base_link'>0.295991 -0.40000000000000002 0.025825000000000001 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>prop_1_1</child>
+        <axis>
+        <xyz>-0.087155999999999997 0 0.99619500000000005</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='prop_1_1'>
+        <pose relative_to='Revolute 17'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>3.066643725047058e-05 -1.08458925174304e-09 -0.000445380681275101 0 0 0</pose>
+        <mass>0.45314088887048781</mass>
+        <inertia>
+            <ixx>8.3999999999999995e-05</ixx>
+            <ixy>-0.00014100000000000001</ixy>
+            <ixz>-0.00028499999999999999</ixz>
+            <iyy>0.0041580000000000002</iyy>
+            <iyz>-1.0000000000000001e-05</iyz>
+            <izz>0.0041830000000000001</izz>
+        </inertia>
+        </inertial>
+                <visual name='prop_1_1_visual'>
+        <pose>-0.295991 0.40000000000000002 -0.025825000000000001 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/prop_1_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 18' type='revolute'>
+        <pose relative_to='base_link'>0.295991 0.40000000000000002 0.025825000000000001 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>prop_3_1</child>
+        <axis>
+        <xyz>-0.087155999999999997 0 0.99619500000000005</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='prop_3_1'>
+        <pose relative_to='Revolute 18'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>3.7896621965960442e-05 -8.0660426661216533e-06 -0.00044474867880233549 0 0 0</pose>
+        <mass>0.45314079983179828</mass>
+        <inertia>
+            <ixx>0.004084</ixx>
+            <ixy>-0.00056400000000000005</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00013799999999999999</iyy>
+            <iyz>2.5000000000000001e-05</iyz>
+            <izz>0.0042030000000000001</izz>
+        </inertia>
+        </inertial>
+                <visual name='prop_3_1_visual'>
+        <pose>-0.295991 -0.40000000000000002 -0.025825000000000001 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/prop_3_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 20' type='revolute'>
+        <pose relative_to='base_link'>0.067500000000000004 0 0.237535 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>gimball_roll_link_1</child>
+        <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='gimball_roll_link_1'>
+        <pose relative_to='Revolute 20'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>-0.0034164450495133701 -0.0023894536240508628 -0.00074317497454456927 0 0 0</pose>
+        <mass>0.092887945137029762</mass>
+        <inertia>
+            <ixx>4.1e-05</ixx>
+            <ixy>-3.9999999999999998e-06</ixy>
+            <ixz>-9.9999999999999995e-07</ixz>
+            <iyy>4.0000000000000003e-05</iyy>
+            <iyz>0</iyz>
+            <izz>7.8999999999999996e-05</izz>
+        </inertia>
+        </inertial>
+                <visual name='gimball_roll_link_1_visual'>
+        <pose>-0.067500000000000004 0 -0.237535 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/gimball_roll_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 19' type='revolute'>
+        <pose relative_to='gimball_roll_link_1'>0.042750000000000003 -0.028500000000000001 0.00014999999999999999 0 0 0</pose>
+        <parent>gimball_roll_link_1</parent>
+        <child>gimball_pitch_link_1</child>
+        <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='gimball_pitch_link_1'>
+        <pose relative_to='Revolute 19'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>-0.001538549220097898 0.02578562142736214 0.022121369809219891 0 0 0</pose>
+        <mass>0.5719427153901443</mass>
+        <inertia>
+            <ixx>0.00018599999999999999</ixx>
+            <ixy>3.0000000000000001e-06</ixy>
+            <ixz>-1.9999999999999999e-06</ixz>
+            <iyy>0.00017699999999999999</iyy>
+            <iyz>1.0000000000000001e-05</iyz>
+            <izz>0.00015699999999999999</izz>
+        </inertia>
+        </inertial>
+                <visual name='gimball_pitch_link_1_visual'>
+        <pose>-0.11025 0.028500000000000001 -0.23768500000000001 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/gimball_pitch_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 21' type='revolute'>
+        <pose relative_to='base_link'>0.57499999999999996 -0.035000000000000003 0.0060000000000000001 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>right_arm_link_1</child>
+        <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='right_arm_link_1'>
+        <pose relative_to='Revolute 21'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>-0.0052218718825588484 -0.084379177279851086 -0.027749998505522521 0 0 0</pose>
+        <mass>0.07157821299835998</mass>
+        <inertia>
+            <ixx>0.00028299999999999999</ixx>
+            <ixy>8.2999999999999998e-05</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00011400000000000001</iyy>
+            <iyz>0</iyz>
+            <izz>0.00033500000000000001</izz>
+        </inertia>
+        </inertial>
+                <visual name='right_arm_link_1_visual'>
+        <pose>-0.57499999999999996 0.035000000000000003 -0.0060000000000000001 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/right_arm_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 24' type='revolute'>
+        <pose relative_to='right_arm_link_1'>0.044408000000000003 -0.19500799999999999 -0.0072500000000000004 0 0 0</pose>
+        <parent>right_arm_link_1</parent>
+        <child>right_yaw_link_1</child>
+        <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='right_yaw_link_1'>
+        <pose relative_to='Revolute 24'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>-1.978899389909472e-07 3.2099350510961239e-07 -0.020499947756612381 0 0 0</pose>
+        <mass>0.004471040309049241</mass>
+        <inertia>
+            <ixx>9.9999999999999995e-07</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>9.9999999999999995e-07</iyy>
+            <iyz>0</iyz>
+            <izz>9.9999999999999995e-07</izz>
+        </inertia>
+        </inertial>
+                <visual name='right_yaw_link_1_visual'>
+        <pose>-0.61940799999999996 0.23000799999999999 0.00125 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/right_yaw_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 23' type='revolute'>
+        <pose relative_to='right_yaw_link_1'>-0.0031640000000000001 0.013894999999999999 -0.020500000000000001 0 0 0</pose>
+        <parent>right_yaw_link_1</parent>
+        <child>right_pitch_link_1</child>
+        <axis>
+        <xyz>0.22203899999999999 -0.97503799999999996 0</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='right_pitch_link_1'>
+        <pose relative_to='Revolute 23'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>0.020851928129526961 -0.009610163405953609 9.5992506582431858e-09 0 0 0</pose>
+        <mass>0.064176907715477557</mass>
+        <inertia>
+            <ixx>3.8999999999999999e-05</ixx>
+            <ixy>1.9999999999999999e-06</ixy>
+            <ixz>0</ixz>
+            <iyy>2.9e-05</iyy>
+            <iyz>0</iyz>
+            <izz>2.9e-05</izz>
+        </inertia>
+        </inertial>
+                <visual name='right_pitch_link_1_visual'>
+        <pose>-0.61624400000000001 0.216113 0.021749999999999999 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/right_pitch_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 22' type='revolute'>
+        <pose relative_to='base_link'>0.57499999999999996 0.035000000000000003 0.0060000000000000001 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>left_arm_link_1</child>
+        <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='left_arm_link_1'>
+        <pose relative_to='Revolute 22'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>-0.031345183004573778 0.078519644386201237 -0.027749883905640971 0 0 0</pose>
+        <mass>0.071572766313869884</mass>
+        <inertia>
+            <ixx>0.00031599999999999998</ixx>
+            <ixy>-1.5999999999999999e-05</ixy>
+            <ixz>0</ixz>
+            <iyy>8.1000000000000004e-05</iyy>
+            <iyz>0</iyz>
+            <izz>0.00033500000000000001</izz>
+        </inertia>
+        </inertial>
+                <visual name='left_arm_link_1_visual'>
+        <pose>-0.57499999999999996 -0.035000000000000003 -0.0060000000000000001 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/left_arm_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 27' type='revolute'>
+        <pose relative_to='left_arm_link_1'>-0.018807000000000001 0.19911400000000001 -0.0072500000000000004 0 0 0</pose>
+        <parent>left_arm_link_1</parent>
+        <child>left_yaw_link_1</child>
+        <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='left_yaw_link_1'>
+        <pose relative_to='Revolute 27'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>3.0156929509139729e-07 -2.352764458257717e-07 -0.020499972092902351 0 0 0</pose>
+        <mass>0.0044710489184941011</mass>
+        <inertia>
+            <ixx>9.9999999999999995e-07</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>9.9999999999999995e-07</iyy>
+            <iyz>0</iyz>
+            <izz>9.9999999999999995e-07</izz>
+        </inertia>
+        </inertial>
+                <visual name='left_yaw_link_1_visual'>
+        <pose>-0.55619300000000005 -0.23411399999999999 0.00125 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/left_yaw_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 26' type='revolute'>
+        <pose relative_to='left_yaw_link_1'>-0.00134 0.014187 -0.020500000000000001 0 0 0</pose>
+        <parent>left_yaw_link_1</parent>
+        <child>left_pitch_link_1</child>
+        <axis>
+        <xyz>0.094033000000000005 -0.99556900000000004 0</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='left_pitch_link_1'>
+        <pose relative_to='Revolute 26'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>0.019434078258809499 -0.012227097458119869 6.603581792496982e-09 0 0 0</pose>
+        <mass>0.064176889471590726</mass>
+        <inertia>
+            <ixx>3.8999999999999999e-05</ixx>
+            <ixy>9.9999999999999995e-07</ixy>
+            <ixz>0</ixz>
+            <iyy>2.9e-05</iyy>
+            <iyz>0</iyz>
+            <izz>2.9e-05</izz>
+        </inertia>
+        </inertial>
+                <visual name='left_pitch_link_1_visual'>
+        <pose>-0.55485300000000004 -0.24830099999999999 0.021749999999999999 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/left_pitch_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+    <joint name='Revolute 25' type='revolute'>
+        <pose relative_to='base_link'>0.54600000000000004 -0.020500000000000001 -0.080250000000000002 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>brace_link_1</child>
+        <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+            <lower>-inf</lower>
+            <upper>inf</upper>
+        </limit>
+        <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        </axis>
+    </joint>
+    <link name='brace_link_1'>
+        <pose relative_to='Revolute 25'>0 0 0 0 0 0</pose>
+        <inertial>
+        <pose>0.02776600945972307 0.0205046663465299 -0.2219037213320986 0 0 0</pose>
+        <mass>0.25782359485091361</mass>
+        <inertia>
+            <ixx>0.002526</ixx>
+            <ixy>0</ixy>
+            <ixz>0.00013200000000000001</ixz>
+            <iyy>0.0024390000000000002</iyy>
+            <iyz>0</iyz>
+            <izz>0.00011900000000000001</izz>
+        </inertia>
+        </inertial>
+                <visual name='brace_link_1_visual'>
+        <pose>-0.54600000000000004 0.020500000000000001 0.080250000000000002 0 0 0</pose>
+        <geometry>
+            <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://jumping_spider_description/meshes/brace_link_1.stl</uri>
+            </mesh>
+        </geometry>
+        <material>
+            <diffuse>0 0 0 1</diffuse>
+            <ambient>0 0 0 1</ambient>
+        </material>
+        </visual>
+    </link>
+
+    
+</model>
+</sdf>
