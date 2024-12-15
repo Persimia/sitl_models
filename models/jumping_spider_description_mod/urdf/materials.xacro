@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<robot name="jumping_spider" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<material name="silver_default">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+<material name="rubber_soft">
+  <color rgba="0.7843137254901961 0.792156862745098 0.8156862745098039 1.0"/>
+</material>
+<material name="surface_matte">
+  <color rgba="0.7019607843137254 0.7019607843137254 0.7019607843137254 1.0"/>
+</material>
+<material name="nylon_12_with_formlabs_fuse_1_3d_printer">
+  <color rgba="0.24705882352941178 0.24705882352941178 0.24705882352941178 1.0"/>
+</material>
+<material name="aluminum_satin">
+  <color rgba="0.9607843137254902 0.9607843137254902 0.9647058823529412 1.0"/>
+</material>
+<material name="steel_satin">
+  <color rgba="0.6274509803921569 0.6274509803921569 0.6274509803921569 1.0"/>
+</material>
+<material name="plastic_matte_gray">
+  <color rgba="0.7019607843137254 0.7019607843137254 0.7019607843137254 1.0"/>
+</material>
+<material name="opaque252525">
+  <color rgba="0.09803921568627451 0.09803921568627451 0.09803921568627451 1.0"/>
+</material>
+
+</robot>

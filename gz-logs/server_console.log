@@ -1,0 +1,155 @@
+(2024-12-11T16:41:47.919007744) (2024-12-11T16:41:47.919018784) [Wrn] [gz.cc:296] Log path already exists on disk! Recording instead to [/home/skemp32/ros2_ws/src/sitl_models/gz-logs(1)]
+(2024-12-11T16:41:47.919327203) (2024-12-11T16:41:47.919339952) [Msg] Gazebo Sim Server v8.6.0
+(2024-12-11T16:41:47.938942541) (2024-12-11T16:41:47.938959091) [Msg] Loading SDF world file[/home/skemp32/ros2_ws/src/sitl_models/worlds/js_turbine.sdf].
+(2024-12-11T16:41:48.310832964) (2024-12-11T16:41:48.310850604) [Msg] Serving entity system service on [/entity/system/add]
+(2024-12-11T16:41:48.313203521) (2024-12-11T16:41:48.313219051) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::WindEffects] for entity [1]
+(2024-12-11T16:41:48.313874947) (2024-12-11T16:41:48.313888667) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::Contact] for entity [1]
+(2024-12-11T16:41:48.357332458) (2024-12-11T16:41:48.357351198) [Dbg] [Physics.cc:870] Loaded [gz::physics::dartsim::Plugin] from library [/usr/lib/x86_64-linux-gnu/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so]
+(2024-12-11T16:41:48.357492327) (2024-12-11T16:41:48.357507457) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::Physics] for entity [1]
+(2024-12-11T16:41:48.362332320) (2024-12-11T16:41:48.362349230) [Dbg] [Sensors.cc:530] Configuring Sensors system
+(2024-12-11T16:41:48.362505179) (2024-12-11T16:41:48.362520659) [Dbg] [Sensors.cc:449] SensorsPrivate::Run
+(2024-12-11T16:41:48.362717458) (2024-12-11T16:41:48.362758937) ([Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::Sensors] for entity [2024-12-11T16:41:48.3629231271]
+) (2024-12-11T16:41:48.363152540) [Dbg] [Sensors.cc:425] SensorsPrivate::RenderThread started
+(2024-12-11T16:41:48.363267500) (2024-12-11T16:41:48.363277970) [Dbg] [Sensors.cc:265] Waiting for init
+(2024-12-11T16:41:48.364803017) (2024-12-11T16:41:48.364817207) [Msg] Create service on [/world/js_turbine/create]
+(2024-12-11T16:41:48.365001296) (2024-12-11T16:41:48.365019356) [Msg] Remove service on [/world/js_turbine/remove]
+(2024-12-11T16:41:48.365194545) (2024-12-11T16:41:48.365211165) [Msg] Pose service on [/world/js_turbine/set_pose]
+(2024-12-11T16:41:48.365383284) (2024-12-11T16:41:48.365399344) [Msg] Pose service on [/world/js_turbine/set_pose_vector]
+(2024-12-11T16:41:48.365622982) (2024-12-11T16:41:48.365639462) [Msg] Light configuration service on [/world/js_turbine/light_config]
+(2024-12-11T16:41:48.366013320) (2024-12-11T16:41:48.366027310) [Msg] Physics service on [/world/js_turbine/set_physics]
+(2024-12-11T16:41:48.366201299) (2024-12-11T16:41:48.366215099) [Msg] SphericalCoordinates service on [/world/js_turbine/set_spherical_coordinates]
+(2024-12-11T16:41:48.366342198) (2024-12-11T16:41:48.366355548) [Msg] Enable collision service on [/world/js_turbine/enable_collision]
+(2024-12-11T16:41:48.366491107) (2024-12-11T16:41:48.366507987) [Msg] Disable collision service on [/world/js_turbine/disable_collision]
+(2024-12-11T16:41:48.366936724) (2024-12-11T16:41:48.366950604) [Msg] Material service on [/world/js_turbine/visual_config]
+(2024-12-11T16:41:48.367114003) (2024-12-11T16:41:48.367127593) [Msg] Material service on [/world/js_turbine/wheel_slip]
+(2024-12-11T16:41:48.367220092) (2024-12-11T16:41:48.367233462) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::UserCommands] for entity [1]
+(2024-12-11T16:41:48.368217617) (2024-12-11T16:41:48.368231657) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::SceneBroadcaster] for entity [1]
+(2024-12-11T16:41:48.369019352) (2024-12-11T16:41:48.369033182) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::Imu] for entity [1]
+(2024-12-11T16:41:48.369745778) (2024-12-11T16:41:48.369759628) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::NavSat] for entity [1]
+(2024-12-11T16:41:48.377393193) (2024-12-11T16:41:48.377410093) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::JointStatePublisher] for entity [12]
+(2024-12-11T16:41:48.378120279) (2024-12-11T16:41:48.378134189) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LiftDrag] for entity [12]
+(2024-12-11T16:41:48.378419737) (2024-12-11T16:41:48.378433977) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LiftDrag] for entity [12]
+(2024-12-11T16:41:48.378679846) (2024-12-11T16:41:48.378693546) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LiftDrag] for entity [12]
+(2024-12-11T16:41:48.378931185) (2024-12-11T16:41:48.378944785) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LiftDrag] for entity [12]
+(2024-12-11T16:41:48.379234153) (2024-12-11T16:41:48.379248393) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LiftDrag] for entity [12]
+(2024-12-11T16:41:48.379521681) (2024-12-11T16:41:48.379535561) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LiftDrag] for entity [12]
+(2024-12-11T16:41:48.379812280) (2024-12-11T16:41:48.379826170) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LiftDrag] for entity [12]
+(2024-12-11T16:41:48.380137378) (2024-12-11T16:41:48.380151228) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LiftDrag] for entity [12]
+(2024-12-11T16:41:48.381059493) (2024-12-11T16:41:48.381073343) [Msg] ApplyJointForce subscribing to Double messages on [/model/jumping_spider_controls/joint/jumping_spider::rotor_0_1_joint/cmd_force]
+(2024-12-11T16:41:48.381152632) (2024-12-11T16:41:48.381163762) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::ApplyJointForce] for entity [12]
+(2024-12-11T16:41:48.381517880) (2024-12-11T16:41:48.381537710) [Msg] ApplyJointForce subscribing to Double messages on [/model/jumping_spider_controls/joint/jumping_spider::rotor_1_1_joint/cmd_force]
+(2024-12-11T16:41:48.381618120) (2024-12-11T16:41:48.381632340) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::ApplyJointForce] for entity [12]
+(2024-12-11T16:41:48.381973578) (2024-12-11T16:41:48.381987298) [Msg] ApplyJointForce subscribing to Double messages on [/model/jumping_spider_controls/joint/jumping_spider::rotor_2_1_joint/cmd_force]
+(2024-12-11T16:41:48.382049947) (2024-12-11T16:41:48.382059957) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::ApplyJointForce] for entity [12]
+(2024-12-11T16:41:48.382430545) (2024-12-11T16:41:48.382444375) [Msg] ApplyJointForce subscribing to Double messages on [/model/jumping_spider_controls/joint/jumping_spider::rotor_3_1_joint/cmd_force]
+(2024-12-11T16:41:48.382505025) (2024-12-11T16:41:48.382514725) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::ApplyJointForce] for entity [12]
+(2024-12-11T16:41:48.387782615) [jumping_spider_controls] flight dynamics model @ 127.0.0.1:9002
+(2024-12-11T16:41:48.387976564) [jumping_spider_controls] ArduPilot ready to fly. The force will be with you
+(2024-12-11T16:41:48.388046163) (2024-12-11T16:41:48.388057413) [Dbg] [SystemManager.cc:77] Loaded system [ArduPilotPlugin] for entity [12]
+(2024-12-11T16:41:48.389378005) (2024-12-11T16:41:48.389393215) [Msg] JointPositionController subscribing to Double messages on [cmd_leg_pos]
+(2024-12-11T16:41:48.389461755) (2024-12-11T16:41:48.389471445) [Dbg] [JointPositionController.cc:302] [JointPositionController] system parameters:
+(2024-12-11T16:41:48.389528595) (2024-12-11T16:41:48.389541075) [Dbg] [JointPositionController.cc:303] p_gain: [10]
+(2024-12-11T16:41:48.389618174) (2024-12-11T16:41:48.389627744) [Dbg] [JointPositionController.cc:304] i_gain: [0.1]
+(2024-12-11T16:41:48.389707794) (2024-12-11T16:41:48.389719633) [Dbg] [JointPositionController.cc:305] d_gain: [0.01]
+(2024-12-11T16:41:48.389794243) (2024-12-11T16:41:48.389803833) [Dbg] [JointPositionController.cc:306] i_max: [1]
+(2024-12-11T16:41:48.389886232) (2024-12-11T16:41:48.389901172) [Dbg] [JointPositionController.cc:307] i_min: [-1]
+(2024-12-11T16:41:48.389983402) (2024-12-11T16:41:48.389997442) [Dbg] [JointPositionController.cc:308] cmd_max: [1000]
+(2024-12-11T16:41:48.390078151) (2024-12-11T16:41:48.390089571) [Dbg] [JointPositionController.cc:309] cmd_min: [-1000]
+(2024-12-11T16:41:48.390173331) (2024-12-11T16:41:48.390186311) [Dbg] [JointPositionController.cc:310] cmd_offset: [0]
+(2024-12-11T16:41:48.390276390) (2024-12-11T16:41:48.390287830) [Dbg] [JointPositionController.cc:311] Topic: [cmd_leg_pos]
+(2024-12-11T16:41:48.390358350) (2024-12-11T16:41:48.390370030) [Dbg] [JointPositionController.cc:312] initial_position: [0]
+(2024-12-11T16:41:48.390448429) (2024-12-11T16:41:48.390458819) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::JointPositionController] for entity [12]
+(2024-12-11T16:41:48.394314446) (2024-12-11T16:41:48.394330196) [Dbg] [SuctionPlugin.cc:132] Detach topic is: /detach
+(2024-12-11T16:41:48.394909073) (2024-12-11T16:41:48.394924083) [Dbg] [SuctionPlugin.cc:138] SuctionPlugin subscribing to messages on [/detach]
+(2024-12-11T16:41:48.395000242) (2024-12-11T16:41:48.395009942) [Dbg] [SuctionPlugin.cc:155] Attach topic is: /attach
+(2024-12-11T16:41:48.395287211) (2024-12-11T16:41:48.395303721) [Dbg] [SuctionPlugin.cc:189] Output topic is: /attached_state
+(2024-12-11T16:41:48.395486880) (2024-12-11T16:41:48.395500479) [Dbg] [SuctionPlugin.cc:206] SDF Leg topic is: /cmd_leg_pos
+(2024-12-11T16:41:48.395647499) (2024-12-11T16:41:48.395661069) [Dbg] [SuctionPlugin.cc:230] Leg topic is: /cmd_leg_pos
+(2024-12-11T16:41:48.395913507) (2024-12-11T16:41:48.395928507) [Dbg] [SystemManager.cc:77] Loaded system [SuctionPlugin] for entity [13]
+(2024-12-11T16:41:48.396388624) (2024-12-11T16:41:48.396405174) [Dbg] [SuctionPlugin.cc:132] Detach topic is: /detach
+(2024-12-11T16:41:48.396588963) (2024-12-11T16:41:48.396600123) [Dbg] [SuctionPlugin.cc:138] SuctionPlugin subscribing to messages on [/detach]
+(2024-12-11T16:41:48.396689243) (2024-12-11T16:41:48.396705412) [Dbg] [SuctionPlugin.cc:155] Attach topic is: /attach
+(2024-12-11T16:41:48.396857442) (2024-12-11T16:41:48.396874442) [Dbg] [SuctionPlugin.cc:189] Output topic is: /attached_state_2
+(2024-12-11T16:41:48.396998481) (2024-12-11T16:41:48.397010461) [Wrn] [SuctionPlugin.cc:227] No valid leg topics could be found. Not using leg publisher
+(2024-12-11T16:41:48.397105890) (2024-12-11T16:41:48.397122520) [Dbg] [SystemManager.cc:77] Loaded system [SuctionPlugin] for entity [13]
+(2024-12-11T16:41:48.398730251) (2024-12-11T16:41:48.398744481) [Msg] Loaded level [3]
+(2024-12-11T16:41:48.402122852) (2024-12-11T16:41:48.402159872) [Dbg] [ServerConfig.cc:657] Generating LogRecord SDF:
+(2024-12-11T16:41:48.402300491) (2024-12-11T16:41:48.402318081) [Dbg] [ServerConfig.cc:713] <plugin name='gz::sim::systems::LogRecord' filename='gz-sim-log-system'>
+  <record_path>/home/skemp32/ros2_ws/src/sitl_models/gz-logs(1)</record_path>
+  <record_resources>false</record_resources>
+</plugin>
+
+(2024-12-11T16:41:48.409547170) (2024-12-11T16:41:48.409564570) [Msg] Recording to log file [/home/skemp32/ros2_ws/src/sitl_models/gz-logs(1)/state.tlog]
+(2024-12-11T16:41:48.409645710) (2024-12-11T16:41:48.409656929) [Dbg] [LogRecord.cc:333] Recording default topic[/gz-logs(1)/sdf].
+(2024-12-11T16:41:48.409732329) (2024-12-11T16:41:48.409749549) [Dbg] [LogRecord.cc:334] Recording default topic[/world/js_turbine/changed_state].
+(2024-12-11T16:41:48.447533773) (2024-12-11T16:41:48.447551603) [Dbg] [SystemManager.cc:77] Loaded system [gz::sim::systems::LogRecord] for entity [1]
+(2024-12-11T16:41:48.448129200) (2024-12-11T16:41:48.448146190) [Msg] Serving world controls on [/world/js_turbine/control], [/world/js_turbine/control/state] and [/world/js_turbine/playback/control]
+(2024-12-11T16:41:48.448351058) (2024-12-11T16:41:48.448368218) [Msg] Serving GUI information on [/world/js_turbine/gui/info]
+(2024-12-11T16:41:48.448437008) (2024-12-11T16:41:48.448447028) [Msg] World [js_turbine] initialized with [1ms] physics profile.
+(2024-12-11T16:41:48.448665556) (2024-12-11T16:41:48.448682756) [Msg] Serving world SDF generation service on [/world/js_turbine/generate_world_sdf]
+(2024-12-11T16:41:48.448876835) (2024-12-11T16:41:48.448893845) [Msg] Serving world names on [/gazebo/worlds]
+(2024-12-11T16:41:48.449049394) (2024-12-11T16:41:48.449066524) [Msg] Resource path add service on [/gazebo/resource_paths/add].
+(2024-12-11T16:41:48.449226203) (2024-12-11T16:41:48.449242153) [Msg] Resource path get service on [/gazebo/resource_paths/get].
+(2024-12-11T16:41:48.449403102) (2024-12-11T16:41:48.449420342) [Msg] Resource path resolve service on [/gazebo/resource_paths/resolve].
+(2024-12-11T16:41:48.449600211) (2024-12-11T16:41:48.449614251) [Msg] Resource paths published on [/gazebo/resource_paths].
+(2024-12-11T16:41:48.449796550) (2024-12-11T16:41:48.449813750) [Msg] Server control service on [/server_control].
+(2024-12-11T16:41:49.816817955) (2024-12-11T16:41:49.816836595) [Msg] Found no publishers on /stats, adding root stats topic
+(2024-12-11T16:41:49.817194873) (2024-12-11T16:41:49.817212083) [Msg] Found no publishers on /clock, adding root clock topic
+(2024-12-11T16:41:49.817655521) (2024-12-11T16:41:49.817669901) [Dbg] [SimulationRunner.cc:551] Creating PostUpdate worker threads: 11
+(2024-12-11T16:41:49.817733631) (2024-12-11T16:41:49.817745401) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (0)
+(2024-12-11T16:41:49.817955710) (2024-12-11T16:41:49.817972800) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (1)
+(2024-12-11T16:41:49.818136939) (2024-12-11T16:41:49.818153679) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (2)
+(2024-12-11T16:41:49.818313278) (2024-12-11T16:41:49.818326718) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (3)
+(2024-12-11T16:41:49.818460767) (2024-12-11T16:41:49.818474237) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (4)
+(2024-12-11T16:41:49.818607556) (2024-12-11T16:41:49.818621016) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (5)
+(2024-12-11T16:41:49.818751185) (2024-12-11T16:41:49.818764365) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (6)
+(2024-12-11T16:41:49.818874664) (2024-12-11T16:41:49.818884384) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (7)
+(2024-12-11T16:41:49.819015914) (2024-12-11T16:41:49.819029213) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (8)
+(2024-12-11T16:41:49.819163913) (2024-12-11T16:41:49.819177293) [Dbg] [SimulationRunner.cc:562] Creating postupdate worker thread (9)
+(2024-12-11T16:41:49.819774309) (2024-12-11T16:41:49.819788129) [Msg] Contact system publishing on world/js_turbine/model/jumping_spider_controls/model/jumping_spider/link/right_pitch_link_1/sensor/sensor_contact/contact
+(2024-12-11T16:41:49.820053917) (2024-12-11T16:41:49.820068467) [Msg] Contact system publishing on world/js_turbine/model/jumping_spider_controls/model/jumping_spider/link/left_pitch_link_1/sensor/sensor_contact/contact
+(2024-12-11T16:41:49.821005832) (2024-12-11T16:41:49.821019882) [Msg] Found IMU sensor with name [jumping_spider::base_link::imu_sensor]
+(2024-12-11T16:41:49.821091561) (2024-12-11T16:41:49.821107341) [Dbg] [ArduPilotPlugin.cc:1156] Computed IMU topic to be: world/js_turbine/model/jumping_spider_controls/model/jumping_spider/link/base_link/sensor/imu_sensor/imu
+(2024-12-11T16:41:49.821919507) (2024-12-11T16:41:49.821933146) [Dbg] [JointPositionController.cc:376] Identified joint [jumping_spider::leg_1_joint] as Entity [57]
+(2024-12-11T16:41:49.824014354) (2024-12-11T16:41:49.824031084) [Dbg] [SuctionPlugin.cc:286] Creating force
+(2024-12-11T16:41:49.824258103) (2024-12-11T16:41:49.824271973) [Dbg] [SuctionPlugin.cc:286] Creating force
+(2024-12-11T16:41:49.828462947) (2024-12-11T16:41:49.828479567) [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+(2024-12-11T16:41:49.828537077) (2024-12-11T16:41:49.828546627) [Dbg] [SDFFeatures.cc:863] The geometry element of collision [tower_collision] couldn't be created
+(2024-12-11T16:41:49.829027034) (2024-12-11T16:41:49.829046854) [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+(2024-12-11T16:41:49.829108624) (2024-12-11T16:41:49.829120754) [Dbg] [SDFFeatures.cc:863] The geometry element of collision [blade1_collision] couldn't be created
+(2024-12-11T16:41:49.829260923) (2024-12-11T16:41:49.829274863) [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+(2024-12-11T16:41:49.829325282) (2024-12-11T16:41:49.829334862) [Dbg] [SDFFeatures.cc:863] The geometry element of collision [blade2_collision] couldn't be created
+(2024-12-11T16:41:49.829484601) (2024-12-11T16:41:49.829499371) [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+(2024-12-11T16:41:49.829548771) (2024-12-11T16:41:49.829558251) [Dbg] [SDFFeatures.cc:863] The geometry element of collision [blade3_collision] couldn't be created
+(2024-12-11T16:41:49.829775240) (2024-12-11T16:41:49.829789570) [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+(2024-12-11T16:41:49.829840719) (2024-12-11T16:41:49.829850279) [Dbg] [SDFFeatures.cc:863] The geometry element of collision [blade_collision] couldn't be created
+(2024-12-11T16:41:49.830003248) (2024-12-11T16:41:49.830017018) [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+(2024-12-11T16:41:49.830077278) (2024-12-11T16:41:49.830092788) [Dbg] [SDFFeatures.cc:863] The geometry element of collision [blade_collision] couldn't be created
+(2024-12-11T16:41:49.883282758) (2024-12-11T16:41:49.883297468) [Dbg] [Sensors.cc:703] Initialization needed
+(2024-12-11T16:41:49.883407567) (2024-12-11T16:41:49.883417927) [Dbg] [Sensors.cc:277] Initializing render context
+(2024-12-11T16:41:49.883583666) (2024-12-11T16:41:49.883597476) [Msg] Loading plugin [gz-rendering-ogre2]
+(2024-12-11T16:41:49.884307261) (2024-12-11T16:41:49.884323511) [Msg] Serving scene information on [/world/js_turbine/scene/info]
+(2024-12-11T16:41:49.884469935) (2024-12-11T16:41:49.884482805) [Dbg] [ImuSensor.cc:150] IMU data for [jumping_spider_controls::jumping_spider::base_link::imu_sensor] advertised on [world/js_turbine/model/jumping_spider_controls/model/jumping_spider/link/base_link/sensor/imu_sensor/imu]
+(2024-12-11T16:41:49.884608885) (2024-12-11T16:41:49.884622994) [Msg] Serving graph information on [/world/js_turbine/scene/graph]
+(2024-12-11T16:41:49.884798233) (2024-12-11T16:41:49.884811933) [Msg] Serving full state on [/world/js_turbine/state]
+(2024-12-11T16:41:49.884971322) (2024-12-11T16:41:49.884986832) [Msg] Serving full state (async) on [/world/js_turbine/state_async]
+(2024-12-11T16:41:49.885158501) (2024-12-11T16:41:49.885174261) [Msg] Publishing scene information on [/world/js_turbine/scene/info]
+(2024-12-11T16:41:49.885365590) (2024-12-11T16:41:49.885381820) [Msg] Publishing entity deletions on [/world/js_turbine/scene/deletion]
+(2024-12-11T16:41:49.885543889) (2024-12-11T16:41:49.885559629) [Msg] Publishing state changes on [/world/js_turbine/state]
+(2024-12-11T16:41:49.885720098) ((2024-12-11T16:41:49.885730558) [Msg] Publishing pose messages on [) ) (2024-12-11T16:41:49.885812582) /world/js_turbine/pose/info]
+[Wrn] [Model.hh:69] Skipping serialization / deserialization for models with //pose/@relative_to attribute.
+(2024-12-11T16:41:49.886109011) (2024-12-11T16:41:49.886126581) [Msg] Publishing dynamic pose messages on [/world/js_turbine/dynamic_pose/info]
+(2024-12-11T16:41:49.886532608) (2024-12-11T16:41:49.886556648) [Dbg] [EntityComponentManager.cc:1655] Updated state thread iterators: 12 threads processing around 9 entities each.
+(2024-12-11T16:41:49.887051650) (2024-12-11T16:41:49.887066190) [Wrn] [Component.hh:144] Trying to serialize component with data type [N3sdf3v145WorldE], which doesn't have `operator<<`. Component will not be serialized.
+(2024-12-11T16:41:49.888533772) (2024-12-11T16:41:49.888547782) [Wrn] [Component.hh:127] Trying to serialize component with data type [St10shared_ptrIN3sdf3v147ElementEE], which doesn't have `operator<<`. Component will not be serialized.
+(2024-12-11T16:41:49.899331079) (2024-12-11T16:41:49.899357498) [Wrn] [Component.hh:144] Trying to serialize component with data type [St6vectorIdSaIdEE(2024-12-11T16:41:49.899501673) (2024-12-11T16:41:49.899559593) ], which doesn't have `operator<<`. Component will not be serialized.
+Trying to serialize component with data type [St6vectorIdSaIdEE], which doesn't have `operator<<`. Component will not be serialized.
+(2024-12-11T16:41:50.759577646) (2024-12-11T16:41:50.759592736) [Dbg] [RenderUtil.cc:2643] Create scene [scene]
+(2024-12-11T16:41:50.774310471) ) (2024-12-11T16:41:50.774392860) (2024-12-11T16:41:50.774437140) (2024-12-11T16:41:50.774499790) [Dbg] [Sensors.cc:703] Initialization needed
+Rendering Thread initialized
+(2024-12-11T16:41:54.875781306) (2024-12-11T16:41:54.875812266) [Dbg] [Lidar.cc:133] Laser scans for [jumping_spider_controls::jumping_spider::gimbal_pitch_1::lidar] advertised on [lidar]
+(2024-12-11T16:41:54.876221414) (2024-12-11T16:41:54.876235663) [Dbg] [GpuLidarSensor.cc:163] Lidar points for [jumping_spider_controls::jumping_spider::gimbal_pitch_1::lidar] advertised on [lidar/points]
+(2024-12-11T16:42:17.42979157) (2024-12-11T16:42:17.42995277) [Dbg] [SignalHandler.cc:142] Received signal[2].
+(2024-12-11T16:42:17.43063486) (2024-12-11T16:42:17.43076036) [Dbg] [ServerPrivate.cc:118] Server received signal[2]
+(2024-12-11T16:42:17.43146396) (2024-12-11T16:42:17.43158316) [Dbg] [Sensors.cc:457] SensorsPrivate::Stop
+(2024-12-11T16:42:17.249245448) (2024-12-11T16:42:17.249264508) [Dbg] [Sensors.cc:443] SensorsPrivate::RenderThread stopped

@@ -1,0 +1,147 @@
+<?xml version="1.0" ?>
+<robot name="jumping_spider" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="right_pitch_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_pitch_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="right_pitch_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="right_yaw_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_yaw_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="right_yaw_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="left_pitch_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_pitch_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="left_pitch_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="left_yaw_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_yaw_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="left_yaw_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="leg_1_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="leg_1_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="leg_1_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rotor_0_1_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rotor_0_1_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rotor_0_1_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rotor_1_1_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rotor_1_1_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rotor_1_1_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rotor_2_1_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rotor_2_1_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rotor_2_1_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rotor_3_1_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rotor_3_1_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rotor_3_1_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="right_arm_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="right_arm_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="right_arm_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="left_arm_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="left_arm_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="left_arm_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="gimbal_pitch_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gimbal_pitch_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gimbal_pitch_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="gimbal_roll_joint_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gimbal_roll_joint">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gimbal_roll_joint_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
