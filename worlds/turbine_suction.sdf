@@ -3,7 +3,7 @@
   <world name="turbine_suction">
     <physics name="1ms" type="ignore">
       <max_step_size>0.001</max_step_size>
-      <real_time_factor>1.0</real_time_factor>
+      <real_time_factor>-1.0</real_time_factor>
     </physics>  
     <!-- Adapted from Gazebo classic (gazebo/world/wind_demo.world)
 

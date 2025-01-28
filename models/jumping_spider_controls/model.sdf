@@ -151,6 +151,24 @@
       <link_name>jumping_spider::rotor_3_1</link_name>
     </plugin>
 
+    <plugin filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+      <a0>0</a0>
+      <alpha_stall>.6</alpha_stall>
+      <cla>.3</cla>
+      <cda>.05</cda>
+      <cma>.1</cma>
+      <cla_stall>.1</cla_stall>
+      <cda_stall>0.1</cda_stall>
+      <cma_stall>.1</cma_stall>
+      <area>0.2</area>
+      <air_density>1.2041</air_density>
+      <cp>0 0 0</cp>
+      <forward>0 1 0</forward>
+      <upward>0 0 1</upward>
+      <link_name>jumping_spider::base_link</link_name>
+    </plugin>
+
     <plugin filename="gz-sim-apply-joint-force-system"
       name="gz::sim::systems::ApplyJointForce">
       <joint_name>jumping_spider::rotor_0_1_joint</joint_name>
@@ -265,8 +283,8 @@
       </control>
 
       <!-- roll range is -30 to +30 deg -->
-      <!-- <control channel="8">
-        <jointName>gimbal::roll_joint</jointName>
+      <control channel="6">
+        <jointName>jumping_spider::gimbal_roll_joint</jointName>
         <multiplier>1.047197551196</multiplier>
         <offset>-0.5</offset>
         <servo_min>1100</servo_min>
@@ -274,11 +292,11 @@
         <type>COMMAND</type>
         <cmd_topic>/gimbal/cmd_roll</cmd_topic>
         <p_gain>2</p_gain>
-      </control> -->
+      </control>
 
       <!-- pitch range is -30 to +30 deg -->
-      <!-- <control channel="9">
-        <jointName>gimbal::tilt_joint</jointName>
+      <control channel="8">
+        <jointName>jumping_spider::gimbal_pitch_joint</jointName>
         <multiplier>1.047197551196</multiplier>
         <offset>-0.5</offset>
         <servo_min>1100</servo_min>
@@ -286,9 +304,7 @@
         <type>COMMAND</type>
         <cmd_topic>/gimbal/cmd_pitch</cmd_topic>
         <p_gain>2</p_gain>
-      </control> -->
-
-
+      </control>
     </plugin>
 
 
@@ -297,13 +313,27 @@
         name="gz::sim::systems::JointPositionController">
         <joint_name>jumping_spider::leg_1_joint</joint_name>
         <topic>cmd_leg_pos</topic>
-        <p_gain>10</p_gain>
-        <i_gain>0.1</i_gain>
-        <d_gain>0.01</d_gain>
-        <i_max>1</i_max>
-        <i_min>-1</i_min>
+        <p_gain>1000</p_gain>
+        <i_gain>10</i_gain>
+        <d_gain>1</d_gain>
+        <i_max>50</i_max>
+        <i_min>-50</i_min>
         <cmd_max>1000</cmd_max>
         <cmd_min>-1000</cmd_min>
+    </plugin>
+    <plugin
+      filename="gz-sim-joint-position-controller-system"
+      name="gz::sim::systems::JointPositionController">
+      <joint_name>jumping_spider::gimbal_roll_joint</joint_name>
+      <topic>/gimbal/cmd_roll</topic>
+      <p_gain>2</p_gain>
+    </plugin>
+    <plugin
+      filename="gz-sim-joint-position-controller-system"
+      name="gz::sim::systems::JointPositionController">
+      <joint_name>jumping_spider::gimbal_pitch_joint</joint_name>
+      <topic>/gimbal/cmd_pitch</topic>
+      <p_gain>2</p_gain>
     </plugin>
 
 

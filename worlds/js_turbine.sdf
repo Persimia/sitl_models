@@ -3,7 +3,7 @@
   <world name="js_turbine">
     <physics name="1ms" type="ignore">
       <max_step_size>0.001</max_step_size>
-      <real_time_factor>1.0</real_time_factor>
+      <real_time_factor>-1.0</real_time_factor>
     </physics>  
     <!-- Adapted from Gazebo classic (gazebo/world/wind_demo.world)
 
@@ -105,14 +105,14 @@
       <cast_shadows>true</cast_shadows>
       <pose>0 0 10 0 0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.8 0.8 0.8 1</specular>
+      <specular>0.2 0.2 0.2 1</specular>
       <attenuation>
         <range>1000</range>
         <constant>0.9</constant>
         <linear>0.01</linear>
         <quadratic>0.001</quadratic>
       </attenuation>
-      <direction>-0.5 0.1 -0.9</direction>
+      <direction>-0.4 0.2 -0.8</direction>
     </light>
 
     <model name="axes">
@@ -137,17 +137,7 @@
 
     <include>
       <uri>model://wind_turbine</uri>
-      <pose degrees="true">0 10 0 0 0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://blade_root</uri>
-      <pose degrees="true">10 0 0 0 0 90</pose>
-    </include>
-
-    <include>
-      <uri>model://blade_tip</uri>
-      <pose degrees="true">-10 10 -5 0 -60 90</pose>
+      <pose degrees="true">-2.736 5.5 0 0 0 90</pose>
     </include>
 
   </world>

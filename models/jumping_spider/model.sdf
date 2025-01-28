@@ -601,10 +601,10 @@
                 <friction>
                     <ode>
                         <mu>
-                            50.0
+                            10000.0
                         </mu>
                         <mu2>
-                            50.0
+                            10000.0
                         </mu2>
                     </ode>
                 </friction>
@@ -768,10 +768,10 @@
                 <friction>
                     <ode>
                         <mu>
-                            50.0
+                            10000.0
                         </mu>
                         <mu2>
-                            50.0
+                            10000.0
                         </mu2>
                     </ode>
                 </friction>
@@ -815,7 +815,7 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>20</spring_stiffness>
-<damping>1</damping>
+          <damping>0.01</damping>
         </dynamics>
       </axis>
     </joint>
@@ -860,7 +860,7 @@
         <dynamics>
           <spring_reference>0</spring_reference>
           <spring_stiffness>20</spring_stiffness>
-<damping>1</damping>
+          <damping>0.01</damping>
         </dynamics>
       </axis>
     </joint>
@@ -902,10 +902,10 @@
         <ray>
           <scan>
             <horizontal>
-              <samples>256</samples>
+              <samples>120</samples>
               <resolution>1</resolution>
-              <min_angle>-2.9753</min_angle>
-              <max_angle>2.9753</max_angle>
+              <min_angle>-0.785398</min_angle>
+              <max_angle>0.785398</max_angle>
             </horizontal>
             <vertical>
               <samples>1</samples>
@@ -916,7 +916,7 @@
           </scan>
           <range>
             <min>0.1</min>
-            <max>20</max>
+            <max>50</max>
             <resolution>0.05</resolution>
           </range>
           <noise>
@@ -927,24 +927,28 @@
         </ray>
       </sensor>
     </link>
-        <plugin filename="SuctionPlugin"
-            name="SuctionPlugin">
-        <parent_link>right_pitch_link_1</parent_link>
+
+    <plugin filename="SuctionPlugin"
+        name="SuctionPlugin">
+    
         <detach_topic>/detach</detach_topic>
         <attach_topic>/attach</attach_topic>
         <output_topic>/attached_state</output_topic>
-        <suction_force>100</suction_force>
+        <failure_topic>/failure_topic</failure_topic>
+        
         <leg_topic>/cmd_leg_pos</leg_topic>
         <leg_retracted_pos>0</leg_retracted_pos>
         <leg_extended_pos>1.5</leg_extended_pos>
-    </plugin>
-    <plugin filename="SuctionPlugin"
-            name="SuctionPlugin">
-        <parent_link>left_pitch_link_1</parent_link>
-        <detach_topic>/detach</detach_topic>
-        <attach_topic>/attach</attach_topic>
-        <output_topic>/attached_state_2</output_topic>
-        <suction_force>100</suction_force>
+
+        <parent_link1>right_pitch_link_1</parent_link1>
+        <suction_force1>100</suction_force1>
+        <suction_delay1>.1</suction_delay1>
+        <detach_delay1>.1</detach_delay1>
+
+        <parent_link2>left_pitch_link_1</parent_link2>
+        <suction_force2>100</suction_force2>
+        <suction_delay2>.1</suction_delay2>
+        <detach_delay2>.1</detach_delay2>
     </plugin>
   </model>
 </sdf>
